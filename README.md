@@ -3,10 +3,10 @@ Ecoleta é um projeto da [NVW](https://nextlevelweek.com/) entre os dias 01/06/2
 
 ## Telas da aplicação:
 Tela inicial da aplicação:<br>
-<img src="./tutorial/screens/home.png" width="50%" height="50%">
+<img src="./tutorial/screens/home.png" width="50%" height="50%" style="display: flex;">
 
 Tela de cadastro:<br>
-<img src="./tutorial/screens/create-point.png" width="50%" height="50%">
+<img src="./tutorial/screens/create-point.png" width="50%" height="50%" style="display: flex;">
 
 ## Como executar o projeto:
 Utilize o node na versão 12.16.3
