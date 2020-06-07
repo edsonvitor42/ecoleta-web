@@ -30,7 +30,7 @@ interface IBGECityResponse {
 const CreatePoint = () => {
     const [items, setItems] = useState<Item[]>([]);
     const [ufs, setUfs] = useState<IBGEUFResponse[]>([]);
-    const [citites, setCitites] = useState<string[]>([]);
+    const [cities, setCities] = useState<string[]>([]);
 
     const [initialPosition, setInitialPosition] = useState<[number, number]>([0, 0]);
 
@@ -80,7 +80,7 @@ const CreatePoint = () => {
             .then(response => {
                 const arrayCities = response.data.map(city => city.nome);
 
-                setCitites(arrayCities);
+                setCities(arrayCities);
             });
     }, [selectedUf]);
 
@@ -226,7 +226,7 @@ const CreatePoint = () => {
                             <label htmlFor="city">Cidade</label>
                             <select name="city" id="city" onChange={handleSelectCity}>
                                 <option value="0">Selecione uma cidade</option>
-                                {citites.map(city => (
+                                {cities.map(city => (
                                     <option key={city} value={city}>{city}</option>
                                 ))}
                             </select>
